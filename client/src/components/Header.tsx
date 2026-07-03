@@ -14,7 +14,7 @@ export default function Header() {
     <header className="site-header">
       <div className="site-container header-inner">
         <a className="brand-logo" href="#inicio" aria-label="Campagnaro — início">
-          <img src="/brand/campagnaro-logo-main.png" alt="Campagnaro" />
+          <img src={`${import.meta.env.BASE_URL}brand/campagnaro-logo-main.png`} alt="Campagnaro" />
         </a>
 
         <nav className="desktop-nav" aria-label="Navegação principal">
