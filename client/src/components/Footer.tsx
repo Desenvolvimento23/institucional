@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="brand-logo footer-logo">
-              <img src="/brand/campagnaro-logo-main.png" alt="Campagnaro" />
+              <img src={`${import.meta.env.BASE_URL}brand/campagnaro-logo-main.png`} alt="Campagnaro" />
             </div>
             <p>
               Soluções completas para o transporte rodoviário desde 1998.

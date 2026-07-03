@@ -63,6 +63,7 @@ jspm_packages/
 
 # Optional eslint cache
 .eslintcache
+.vite/
 
 # Microbundle cache
 .rpt2_cache/

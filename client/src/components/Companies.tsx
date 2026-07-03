@@ -6,7 +6,7 @@ const companies = [
     location: "Vacaria, RS",
     description:
       "Peças, acessórios, climatização, estofaria e soluções para equipar seu caminhão.",
-    logo: "/companies/acessorios.png",
+    logo: "companies/acessorios.png",
     logoClass: "",
     href: "https://www.campagnaro.com.br/",
   },
@@ -15,7 +15,7 @@ const companies = [
     location: "Vacaria, RS",
     description:
       "Manutenção completa para caminhões e carretas com estrutura e equipamentos modernos.",
-    logo: "/companies/truck-center.png",
+    logo: "companies/truck-center.png",
     logoClass: "",
     href: "https://www.campagnaro.com.br/",
   },
@@ -24,7 +24,7 @@ const companies = [
     location: "Vacaria, RS",
     description:
       "Mecânica pesada, reforma de carretas, pintura naval e serviços autorizados Randon.",
-    logo: "/companies/ciotta-randon.png",
+    logo: "companies/ciotta-randon.png",
     logoClass: "",
     href: "https://www.instagram.com/cecimplementos/",
   },
@@ -33,7 +33,7 @@ const companies = [
     location: "Vacaria, RS",
     description:
       "Compra e venda de caminhões e carretas, com suporte completo de documentação.",
-    logo: "/companies/caminhoes-carretas.png",
+    logo: "companies/caminhoes-carretas.png",
     logoClass: "company-logo-cropped",
     href: "https://www.campagnarocaminhoes.com.br/",
   },
@@ -42,7 +42,7 @@ const companies = [
     location: "São Marcos, RS",
     description:
       "Restauração, alinhamento de chassis, pintura e reforma de veículos pesados.",
-    logo: "/companies/forte-restauradora-113.png",
+    logo: "companies/forte-restauradora-113.png",
     logoClass: "company-logo-badge",
     href: "https://forterestauradora.com.br/",
   },
@@ -51,7 +51,7 @@ const companies = [
     location: "Rio Grande do Sul",
     description:
       "Desmontagem veicular responsável e reaproveitamento de peças originais usadas.",
-    logo: "/companies/forte-demolidora.png",
+    logo: "companies/forte-demolidora.png",
     logoClass: "company-logo-square",
     href: "https://www.demolidoraforte.com.br/",
   },
@@ -83,7 +83,10 @@ export default function Companies() {
               >
                 <div className="company-card-top">
                   <div className={`company-logo-frame ${company.logoClass}`}>
-                    <img src={company.logo} alt={`Logo ${company.name}`} />
+                    <img
+                      src={`${import.meta.env.BASE_URL}${company.logo}`}
+                      alt={`Logo ${company.name}`}
+                    />
                   </div>
                 </div>
                 <h3>{company.name}</h3>
