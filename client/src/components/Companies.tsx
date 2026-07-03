@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import CompanyCarousel from "./CompanyCarousel";
 
 const companies = [
   {
@@ -9,6 +10,14 @@ const companies = [
     logo: "companies/truck-center.png",
     logoClass: "",
     href: "https://www.campagnaro.com.br/",
+    images: [
+      "companies/truck-center-gallery/01-fachada.jpg",
+      "companies/truck-center-gallery/02-servicos.jpg",
+      "companies/truck-center-gallery/03-estoque.jpg",
+      "companies/truck-center-gallery/04-manutencao-cabine.jpg",
+      "companies/truck-center-gallery/05-inspecao.jpg",
+      "companies/truck-center-gallery/06-testes.jpg",
+    ],
   },
   {
     name: "Campagnaro Peças e Acessórios",
@@ -65,15 +74,15 @@ export default function Companies() {
           <span className="section-kicker light">Grupo Campagnaro</span>
           <h2>Uma solução para cada trecho da jornada.</h2>
           <p>
-            Seis operações especializadas, conectadas pela mesma qualidade e pelo
-            compromisso de manter o transporte em movimento.
+            Seis operações especializadas, conectadas pela mesma qualidade e
+            pelo compromisso de manter o transporte em movimento.
           </p>
         </div>
 
         <div className="company-grid">
-          {companies.map((company) => (
+          {companies.map(company => (
             <a
-              className="company-card"
+              className={`company-card${company.images ? " has-carousel" : ""}`}
               href={company.href}
               target="_blank"
               rel="noreferrer"
@@ -96,6 +105,13 @@ export default function Companies() {
                   <ArrowUpRight size={18} />
                 </div>
               </div>
+              {company.images ? (
+                <CompanyCarousel
+                  companyName={company.name}
+                  images={company.images}
+                  intervalMs={4000}
+                />
+              ) : null}
             </a>
           ))}
         </div>
