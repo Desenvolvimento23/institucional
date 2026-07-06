@@ -27,6 +27,14 @@ const companies = [
     logo: "companies/acessorios.png",
     logoClass: "",
     href: "https://www.campagnaro.com.br/",
+    images: [
+      "companies/acessorios-gallery/01-fachada.jpg",
+      "companies/acessorios-gallery/02-historia.jpg",
+      "companies/acessorios-gallery/03-loja.jpg",
+      "companies/acessorios-gallery/04-estrutura.jpg",
+      "companies/acessorios-gallery/05-acessorios.jpg",
+      "companies/acessorios-gallery/06-estofaria.jpg",
+    ],
   },
   {
     name: "Campagnaro Caminhões e Carretas",
@@ -36,6 +44,14 @@ const companies = [
     logo: "companies/caminhoes-carretas.png",
     logoClass: "company-logo-cropped",
     href: "https://www.campagnarocaminhoes.com.br/",
+    images: [
+      "companies/caminhoes-carretas-gallery/01-fachada-aerea.png",
+      "companies/caminhoes-carretas-gallery/02-fachada.jpg",
+      "companies/caminhoes-carretas-gallery/03-estrutura.png",
+      "companies/caminhoes-carretas-gallery/04-entrada.png",
+      "companies/caminhoes-carretas-gallery/05-caminhoes.jpg",
+      "companies/caminhoes-carretas-gallery/06-caminhao.jpg",
+    ],
   },
   {
     name: "Forte Demolidora",
@@ -45,6 +61,14 @@ const companies = [
     logo: "companies/forte-demolidora.png",
     logoClass: "company-logo-square",
     href: "https://www.demolidoraforte.com.br/",
+    images: [
+      "companies/forte-demolidora-gallery/01-fachada.jpg",
+      "companies/forte-demolidora-gallery/02-vista-aerea.jpg",
+      "companies/forte-demolidora-gallery/03-patio.jpg",
+      "companies/forte-demolidora-gallery/04-cabines.jpg",
+      "companies/forte-demolidora-gallery/05-pecas.jpg",
+      "companies/forte-demolidora-gallery/06-bancos.jpg",
+    ],
   },
   {
     name: "Forte Restauradora",
@@ -54,6 +78,14 @@ const companies = [
     logo: "companies/forte-restauradora-113.png",
     logoClass: "company-logo-badge",
     href: "https://forterestauradora.com.br/",
+    images: [
+      "companies/forte-restauradora-gallery/01-fachada.webp",
+      "companies/forte-restauradora-gallery/02-vista-aerea.webp",
+      "companies/forte-restauradora-gallery/03-identidade.webp",
+      "companies/forte-restauradora-gallery/04-acesso.webp",
+      "companies/forte-restauradora-gallery/05-estrutura.webp",
+      "companies/forte-restauradora-gallery/06-servico.webp",
+    ],
   },
   {
     name: "Campagnaro e Ciotta Implementos",
@@ -63,6 +95,14 @@ const companies = [
     logo: "companies/ciotta-randon.png",
     logoClass: "",
     href: "https://www.instagram.com/cecimplementos/",
+    images: [
+      "companies/ciotta-randon-gallery/01-fachada.webp",
+      "companies/ciotta-randon-gallery/02-vista-aerea.webp",
+      "companies/ciotta-randon-gallery/03-fachada-geral.jpg",
+      "companies/ciotta-randon-gallery/04-oficina.webp",
+      "companies/ciotta-randon-gallery/05-estrutura.webp",
+      "companies/ciotta-randon-gallery/06-implemento.webp",
+    ],
   },
 ];
 
