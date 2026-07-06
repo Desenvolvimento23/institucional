@@ -1,0 +1,18 @@
+{
+  "name": "Grupo Campagnaro",
+  "short_name": "Campagnaro",
+  "description": "Soluções completas para caminhões e carretas desde 1998.",
+  "lang": "pt-BR",
+  "start_url": "/institucional/",
+  "scope": "/institucional/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#090909",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "566x566",
+      "type": "image/png"
+    }
+  ]
+}

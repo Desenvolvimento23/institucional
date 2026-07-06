@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://desenvolvimento23.github.io/institucional/sitemap.xml

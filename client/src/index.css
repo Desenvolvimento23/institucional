@@ -876,7 +876,7 @@ img {
 .footer-logo {
   width: 280px;
   height: 68px;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
 .footer-brand {
@@ -884,13 +884,6 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.footer-brand p {
-  max-width: 290px;
-  color: rgba(9, 9, 9, 0.55);
-  margin-bottom: 0;
-  font-size: 0.86rem;
 }
 
 .footer-grid h3 {

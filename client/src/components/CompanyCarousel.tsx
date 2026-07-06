@@ -34,6 +34,8 @@ export default function CompanyCarousel({
           src={`${import.meta.env.BASE_URL}${image}`}
           alt={`Trabalho realizado pela ${companyName}, foto ${index + 1}`}
           aria-hidden={index !== activeImage}
+          loading="lazy"
+          decoding="async"
           key={image}
         />
       ))}
