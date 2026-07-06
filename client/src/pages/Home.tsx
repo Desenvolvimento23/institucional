@@ -1,8 +1,9 @@
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import History from '@/components/History';
-import Companies from '@/components/Companies';
-import Footer from '@/components/Footer';
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import History from "@/components/History";
+import Companies from "@/components/Companies";
+import Partners from "@/components/Partners";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <History />
         <Companies />
+        <Partners />
       </main>
       <Footer />
     </div>

@@ -930,6 +930,84 @@ img {
   font-size: 0.72rem;
 }
 
+.partners-section {
+  overflow: hidden;
+  padding: 48px 0 56px;
+  border-top: 1px solid rgba(9, 9, 9, 0.08);
+  background: #ffffff;
+}
+
+.partners-heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.partners-heading h2 {
+  margin: 0;
+  color: var(--red);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.partners-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 7%,
+    #000 93%,
+    transparent
+  );
+}
+
+.partners-track {
+  display: flex;
+  width: max-content;
+  animation: partners-scroll 65s linear infinite;
+  will-change: transform;
+}
+
+.partners-group {
+  display: flex;
+  flex-shrink: 0;
+  gap: 24px;
+  padding-right: 24px;
+}
+
+.partner-logo {
+  display: flex;
+  width: 180px;
+  height: 100px;
+  flex: 0 0 180px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px;
+  border: 1px solid rgba(9, 9, 9, 0.08);
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.partner-logo img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transform: scale(1.55);
+}
+
+@keyframes partners-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
 @media (max-width: 980px) {
   .header-inner {
     min-height: 72px;
@@ -1003,6 +1081,44 @@ img {
 @media (max-width: 680px) {
   .site-container {
     width: min(100% - 32px, 1180px);
+  }
+
+  .partners-section {
+    padding: 40px 0 48px;
+  }
+
+  .partners-heading {
+    margin-bottom: 18px;
+  }
+
+  .partners-heading h2 {
+    font-size: 0.7rem;
+  }
+
+  .partners-marquee {
+    mask-image: linear-gradient(
+      90deg,
+      transparent,
+      #000 3%,
+      #000 97%,
+      transparent
+    );
+  }
+
+  .partners-track {
+    animation-duration: 55s;
+  }
+
+  .partners-group {
+    gap: 14px;
+    padding-right: 14px;
+  }
+
+  .partner-logo {
+    width: 138px;
+    height: 82px;
+    flex-basis: 138px;
+    padding: 6px;
   }
 
   .header-inner {
