@@ -12,6 +12,15 @@ export default function CompanyCarousel({
   intervalMs = 4000,
 }: CompanyCarouselProps) {
   const [activeImage, setActiveImage] = useState(0);
+  const hasControls = images.length > 1;
+
+  const showPreviousImage = () => {
+    setActiveImage(current => (current - 1 + images.length) % images.length);
+  };
+
+  const showNextImage = () => {
+    setActiveImage(current => (current + 1) % images.length);
+  };
 
   useEffect(() => {
     if (images.length < 2) return undefined;
@@ -39,6 +48,34 @@ export default function CompanyCarousel({
           key={image}
         />
       ))}
+      {hasControls && (
+        <>
+          <button
+            className="company-carousel-arrow company-carousel-arrow--prev"
+            type="button"
+            aria-label={`Ver foto anterior da ${companyName}`}
+            onClick={event => {
+              event.preventDefault();
+              event.stopPropagation();
+              showPreviousImage();
+            }}
+          >
+            ‹
+          </button>
+          <button
+            className="company-carousel-arrow company-carousel-arrow--next"
+            type="button"
+            aria-label={`Ver próxima foto da ${companyName}`}
+            onClick={event => {
+              event.preventDefault();
+              event.stopPropagation();
+              showNextImage();
+            }}
+          >
+            ›
+          </button>
+        </>
+      )}
       <div className="company-carousel-progress" aria-hidden="true">
         {images.map((image, index) => (
           <span

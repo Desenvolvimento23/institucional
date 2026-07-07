@@ -86,7 +86,7 @@ img {
 
 .header-inner {
   display: flex;
-  min-height: 78px;
+  min-height: 68px;
   align-items: center;
   gap: 32px;
 }
@@ -94,8 +94,8 @@ img {
 .brand-logo {
   position: relative;
   display: flex;
-  width: 230px;
-  height: 58px;
+  width: 210px;
+  height: 52px;
   flex: 0 0 auto;
   align-items: center;
   overflow: hidden;
@@ -205,8 +205,8 @@ img {
 }
 
 .header-cta {
-  min-height: 42px;
-  padding-inline: 18px;
+  min-height: 40px;
+  padding-inline: 17px;
   font-size: 0.82rem;
 }
 
@@ -718,6 +718,41 @@ img {
   opacity: 1;
 }
 
+.company-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.48);
+  color: #ffffff;
+  font: inherit;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.company-carousel-arrow:hover,
+.company-carousel-arrow:focus-visible {
+  border-color: var(--red);
+  background: var(--red);
+  transform: translateY(-50%) scale(1.04);
+}
+
+.company-carousel-arrow--prev {
+  left: 14px;
+}
+
+.company-carousel-arrow--next {
+  right: 14px;
+}
+
 .company-carousel-progress {
   position: absolute;
   z-index: 2;
@@ -870,7 +905,7 @@ img {
   display: grid;
   grid-template-columns: 1.7fr 0.8fr 0.8fr;
   gap: 48px;
-  padding-block: 68px;
+  padding: 22px 0 64px;
 }
 
 .footer-logo {
@@ -932,7 +967,7 @@ img {
 
 .partners-section {
   overflow: hidden;
-  padding: 48px 0 56px;
+  padding: 38px 0 8px;
   border-top: 1px solid rgba(9, 9, 9, 0.08);
   background: #ffffff;
 }
@@ -1084,7 +1119,7 @@ img {
   }
 
   .partners-section {
-    padding: 40px 0 48px;
+    padding: 30px 0 8px;
   }
 
   .partners-heading {
@@ -1323,7 +1358,7 @@ img {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 38px;
-    padding-block: 54px;
+    padding: 18px 0 52px;
   }
 
   .footer-bottom {

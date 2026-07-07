@@ -98,7 +98,7 @@ const companies = [
     images: [
       "companies/ciotta-randon-gallery/01-fachada.webp",
       "companies/ciotta-randon-gallery/02-vista-aerea.webp",
-      "companies/ciotta-randon-gallery/03-fachada-geral.jpg",
+      "companies/ciotta-randon-gallery/03-fachada-geral.webp",
       "companies/ciotta-randon-gallery/04-oficina.webp",
       "companies/ciotta-randon-gallery/05-estrutura.webp",
       "companies/ciotta-randon-gallery/06-implemento.webp",
