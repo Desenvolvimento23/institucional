@@ -58,7 +58,7 @@ const companies = [
   },
   {
     name: "Forte Demolidora",
-    location: "Rio Grande do Sul",
+    location: "Vacaria, RS",
     description:
       "Desmontagem veicular responsável e reaproveitamento de peças originais usadas.",
     logo: "companies/forte-demolidora.png",
@@ -132,16 +132,23 @@ export default function Companies() {
               key={company.name}
             >
               <div className="company-card-top">
-                <div className={`company-logo-frame ${company.logoClass}`}>
+                <a
+                  className="company-logo-link"
+                  href={company.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Acessar site da ${company.name}`}
+                >
+                  <div className={`company-logo-frame ${company.logoClass}`}>
                   <img
                     src={`${import.meta.env.BASE_URL}${company.logo}`}
                     alt={`Logo ${company.name}`}
                   />
                 </div>
+                </a>
               </div>
               <div className="company-card-content">
-                <h3>{company.name}</h3>
-                <p>{company.description}</p>
+                <h3><a className="company-title-link" href={company.href} target="_blank" rel="noreferrer">{company.name}</a></h3>
                 <a
                   className="company-card-footer"
                   href={company.href}
@@ -152,6 +159,7 @@ export default function Companies() {
                   <span>{company.location}</span>
                   <ArrowUpRight size={18} />
                 </a>
+                <p>{company.description}</p>
               </div>
               {company.images ? (
                 <CompanyCarousel
