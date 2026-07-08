@@ -592,7 +592,7 @@ img {
   gap: 36px;
 }
 
-.company-card:focus-visible {
+.company-card:focus-within {
   position: relative;
   z-index: 1;
   outline: 2px solid var(--red);
@@ -688,8 +688,45 @@ img {
   transition: transform 160ms ease;
 }
 
+.company-card-footer:hover,
+.company-card-footer:focus-visible {
+  color: var(--white);
+}
+
+.company-instagram-link {
+  display: inline-flex;
+  grid-column: 1 / -1;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: -10px auto 0;
+  padding: 9px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  color: var(--white);
+  font-size: 0.82rem;
+  font-weight: 750;
+  letter-spacing: 0.01em;
+  transition:
+    border-color 120ms ease,
+    background-color 120ms ease,
+    color 120ms ease;
+}
+
+.company-instagram-link svg {
+  color: var(--white);
+}
+
+.company-instagram-link:hover,
+.company-instagram-link:focus-visible {
+  border-color: var(--red);
+  background: var(--red);
+  color: var(--white);
+}
+
 .company-card:hover .company-card-footer svg,
-.company-card:focus-visible .company-card-footer svg {
+.company-card:focus-within .company-card-footer svg {
   transform: translate(2px, -2px);
 }
 

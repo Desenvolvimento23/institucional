@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Instagram } from "lucide-react";
 import CompanyCarousel from "./CompanyCarousel";
 
 const companies = [
@@ -10,6 +10,7 @@ const companies = [
     logo: "companies/truck-center.png",
     logoClass: "",
     href: "https://www.campagnaro.com.br/",
+    instagram: "https://www.instagram.com/campagnaroacessorios/",
     images: [
       "companies/truck-center-gallery/01-fachada.jpg",
       "companies/truck-center-gallery/02-servicos.jpg",
@@ -27,6 +28,7 @@ const companies = [
     logo: "companies/acessorios.png",
     logoClass: "",
     href: "https://www.campagnaro.com.br/",
+    instagram: "https://www.instagram.com/campagnaroacessorios/",
     images: [
       "companies/acessorios-gallery/01-fachada.jpg",
       "companies/acessorios-gallery/02-historia.jpg",
@@ -44,6 +46,7 @@ const companies = [
     logo: "companies/caminhoes-carretas.png",
     logoClass: "company-logo-cropped",
     href: "https://www.campagnarocaminhoes.com.br/",
+    instagram: "https://www.instagram.com/campagnarocaminhoes",
     images: [
       "companies/caminhoes-carretas-gallery/01-fachada-aerea.png",
       "companies/caminhoes-carretas-gallery/02-fachada.jpg",
@@ -61,6 +64,7 @@ const companies = [
     logo: "companies/forte-demolidora.png",
     logoClass: "company-logo-square",
     href: "https://www.demolidoraforte.com.br/",
+    instagram: "https://www.instagram.com/demolidoraforte/",
     images: [
       "companies/forte-demolidora-gallery/01-fachada.jpg",
       "companies/forte-demolidora-gallery/02-vista-aerea.jpg",
@@ -78,6 +82,7 @@ const companies = [
     logo: "companies/forte-restauradora-113.png",
     logoClass: "company-logo-badge",
     href: "https://forterestauradora.com.br/",
+    instagram: "https://www.instagram.com/forte_restauradora/",
     images: [
       "companies/forte-restauradora-gallery/01-fachada.webp",
       "companies/forte-restauradora-gallery/02-vista-aerea.webp",
@@ -95,6 +100,7 @@ const companies = [
     logo: "companies/ciotta-randon.png",
     logoClass: "",
     href: "https://www.instagram.com/cecimplementos/",
+    instagram: "https://www.instagram.com/cecimplementos/",
     images: [
       "companies/ciotta-randon-gallery/01-fachada.webp",
       "companies/ciotta-randon-gallery/02-vista-aerea.webp",
@@ -121,13 +127,9 @@ export default function Companies() {
 
         <div className="company-grid">
           {companies.map(company => (
-            <a
+            <article
               className={`company-card${company.images ? " has-carousel" : ""}`}
-              href={company.href}
-              target="_blank"
-              rel="noreferrer"
               key={company.name}
-              aria-label={`Acessar página da ${company.name}`}
             >
               <div className="company-card-top">
                 <div className={`company-logo-frame ${company.logoClass}`}>
@@ -140,10 +142,16 @@ export default function Companies() {
               <div className="company-card-content">
                 <h3>{company.name}</h3>
                 <p>{company.description}</p>
-                <div className="company-card-footer">
+                <a
+                  className="company-card-footer"
+                  href={company.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Acessar página da ${company.name}`}
+                >
                   <span>{company.location}</span>
                   <ArrowUpRight size={18} />
-                </div>
+                </a>
               </div>
               {company.images ? (
                 <CompanyCarousel
@@ -152,7 +160,17 @@ export default function Companies() {
                   intervalMs={4000}
                 />
               ) : null}
-            </a>
+              <a
+                className="company-instagram-link"
+                href={company.instagram}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Abrir Instagram da ${company.name}`}
+              >
+                <Instagram size={17} />
+                Instagram
+              </a>
+            </article>
           ))}
         </div>
       </div>
