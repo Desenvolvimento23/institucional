@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /institucional/__manus__/
 
 Sitemap: https://desenvolvimento23.github.io/institucional/sitemap.xml

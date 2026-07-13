@@ -1,9 +1,14 @@
+import type { CSSProperties } from "react";
 import { ArrowDown, ArrowRight, MapPin } from "lucide-react";
 
 export default function Hero() {
+  const heroImageStyle = {
+    "--hero-image": `url("${import.meta.env.BASE_URL}hero/desk.png")`,
+  } as CSSProperties;
+
   return (
     <section id="inicio" className="hero">
-      <div className="hero-media" aria-hidden="true" />
+      <div className="hero-media" style={heroImageStyle} aria-hidden="true" />
       <div className="hero-overlay" aria-hidden="true" />
 
       <div className="site-container hero-content">

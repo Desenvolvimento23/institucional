@@ -258,7 +258,7 @@ img {
 }
 
 .hero-media {
-  background-image: url("https://cdn.dooca.store/1814/files/blog-2026-2.png?v=1771865455");
+  background-image: var(--hero-image);
   background-position: center;
   background-size: cover;
   opacity: 0.55;

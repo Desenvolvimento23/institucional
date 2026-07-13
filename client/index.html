@@ -6,10 +6,21 @@
     <title>Grupo Campagnaro</title>
     <meta
       name="description"
-      content="Grupo Campagnaro em Vacaria, RS: peças, acessórios, manutenção, implementos, restauração e soluções completas para caminhões e carretas desde 1998."
+      content="Grupo Campagnaro em Vacaria, RS: peças, acessórios, manutenção, implementos, restauração e soluções para caminhões e carretas desde 1998."
+    />
+    <meta
+      name="keywords"
+      content="Grupo Campagnaro, Campagnaro Vacaria, peças para caminhões, acessórios para caminhões, manutenção de caminhões, caminhões e carretas, implementos Randon, Forte Demolidora, Forte Restauradora, Rio Grande do Sul"
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
     <meta name="author" content="Grupo Campagnaro" />
+    <meta name="application-name" content="Grupo Campagnaro" />
+    <meta name="apple-mobile-web-app-title" content="Grupo Campagnaro" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="geo.region" content="BR-RS" />
+    <meta name="geo.placename" content="Vacaria" />
+    <meta name="theme-color" content="#090909" />
     <link
       rel="canonical"
       href="https://desenvolvimento23.github.io/institucional/"
@@ -34,7 +45,7 @@
     />
     <meta
       property="og:description"
-      content="Seis empresas especializadas em peças, acessórios e serviços para caminhões e carretas no Rio Grande do Sul."
+      content="Seis empresas especializadas em peças, acessórios, manutenção, implementos, restauração e soluções para caminhões e carretas no Rio Grande do Sul."
     />
     <meta
       property="og:url"
@@ -44,11 +55,12 @@
       property="og:image"
       content="https://desenvolvimento23.github.io/institucional/companies/truck-center-gallery/04-manutencao-cabine.jpg"
     />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1920" />
     <meta property="og:image:height" content="1080" />
     <meta
       property="og:image:alt"
-      content="Fachada da Campagnaro Truck Center em Vacaria, Rio Grande do Sul"
+      content="Campagnaro Truck Center, uma das empresas do Grupo Campagnaro em Vacaria, RS"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -58,15 +70,19 @@
     />
     <meta
       name="twitter:description"
-      content="Peças, acessórios e serviços especializados para caminhões e carretas desde 1998."
+      content="Peças, acessórios, manutenção, implementos e serviços especializados para caminhões e carretas desde 1998."
     />
     <meta
       name="twitter:image"
       content="https://desenvolvimento23.github.io/institucional/companies/truck-center-gallery/04-manutencao-cabine.jpg"
     />
+    <meta
+      name="twitter:image:alt"
+      content="Campagnaro Truck Center, uma das empresas do Grupo Campagnaro em Vacaria, RS"
+    />
 
-    <meta name="theme-color" content="#090909" />
     <link rel="icon" href="%BASE_URL%favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="%BASE_URL%favicon.png" />
     <link rel="manifest" href="%BASE_URL%site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -77,54 +93,142 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://desenvolvimento23.github.io/institucional/#organization",
-        "name": "Grupo Campagnaro",
-        "url": "https://desenvolvimento23.github.io/institucional/",
-        "logo": "https://desenvolvimento23.github.io/institucional/brand/campagnaro-logo-main.png",
-        "image": "https://desenvolvimento23.github.io/institucional/companies/truck-center-gallery/04-manutencao-cabine.jpg",
-        "description": "Grupo empresarial especializado em peças, acessórios e serviços para caminhões e carretas desde 1998.",
-        "foundingDate": "1998",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Vacaria",
-          "addressRegion": "RS",
-          "addressCountry": "BR"
-        },
-        "sameAs": [
-          "https://www.instagram.com/campagnaro/",
-          "https://www.facebook.com/campagnaroacessorios/"
-        ],
-        "subOrganization": [
+        "@graph": [
           {
             "@type": "Organization",
-            "name": "Campagnaro Truck Center",
-            "url": "https://www.campagnaro.com.br/"
+            "@id": "https://desenvolvimento23.github.io/institucional/#organization",
+            "name": "Grupo Campagnaro",
+            "alternateName": "Campagnaro",
+            "url": "https://desenvolvimento23.github.io/institucional/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://desenvolvimento23.github.io/institucional/brand/campagnaro-logo-main.png"
+            },
+            "image": "https://desenvolvimento23.github.io/institucional/companies/truck-center-gallery/04-manutencao-cabine.jpg",
+            "description": "Grupo empresarial especializado em peças, acessórios, manutenção, implementos, restauração e soluções para caminhões e carretas desde 1998.",
+            "foundingDate": "1998",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Vacaria",
+              "addressRegion": "RS",
+              "addressCountry": "BR"
+            },
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Rio Grande do Sul"
+            },
+            "sameAs": [
+              "https://www.instagram.com/campagnaroacessorios/",
+              "https://www.facebook.com/campagnaroacessorios/",
+              "https://www.instagram.com/campagnarocaminhoes",
+              "https://www.instagram.com/demolidoraforte/",
+              "https://www.instagram.com/forte_restauradora/",
+              "https://www.instagram.com/cecimplementos/"
+            ],
+            "subOrganization": [
+              {
+                "@type": "AutoRepair",
+                "name": "Campagnaro Truck Center",
+                "url": "https://www.campagnaro.com.br/",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Vacaria",
+                  "addressRegion": "RS",
+                  "addressCountry": "BR"
+                }
+              },
+              {
+                "@type": "Store",
+                "name": "Campagnaro Peças e Acessórios",
+                "url": "https://www.campagnaro.com.br/",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Vacaria",
+                  "addressRegion": "RS",
+                  "addressCountry": "BR"
+                }
+              },
+              {
+                "@type": "AutoDealer",
+                "name": "Campagnaro Caminhões e Carretas",
+                "url": "https://www.campagnarocaminhoes.com.br/",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Vacaria",
+                  "addressRegion": "RS",
+                  "addressCountry": "BR"
+                }
+              },
+              {
+                "@type": "AutoPartsStore",
+                "name": "Forte Demolidora",
+                "url": "https://www.demolidoraforte.com.br/",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Vacaria",
+                  "addressRegion": "RS",
+                  "addressCountry": "BR"
+                }
+              },
+              {
+                "@type": "AutoRepair",
+                "name": "Forte Restauradora",
+                "url": "https://forterestauradora.com.br/",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "São Marcos",
+                  "addressRegion": "RS",
+                  "addressCountry": "BR"
+                }
+              },
+              {
+                "@type": "AutoRepair",
+                "name": "Campagnaro e Ciotta Implementos",
+                "url": "https://www.instagram.com/cecimplementos/",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Vacaria",
+                  "addressRegion": "RS",
+                  "addressCountry": "BR"
+                }
+              }
+            ]
           },
           {
-            "@type": "Organization",
-            "name": "Campagnaro Peças e Acessórios",
-            "url": "https://www.campagnaro.com.br/"
+            "@type": "WebSite",
+            "@id": "https://desenvolvimento23.github.io/institucional/#website",
+            "url": "https://desenvolvimento23.github.io/institucional/",
+            "name": "Grupo Campagnaro",
+            "inLanguage": "pt-BR",
+            "publisher": {
+              "@id": "https://desenvolvimento23.github.io/institucional/#organization"
+            }
           },
           {
-            "@type": "Organization",
-            "name": "Campagnaro Caminhões e Carretas",
-            "url": "https://www.campagnarocaminhoes.com.br/"
+            "@type": "WebPage",
+            "@id": "https://desenvolvimento23.github.io/institucional/#webpage",
+            "url": "https://desenvolvimento23.github.io/institucional/",
+            "name": "Grupo Campagnaro",
+            "description": "Página institucional do Grupo Campagnaro, com empresas especializadas em caminhões, carretas, peças, acessórios, manutenção, implementos e restauração.",
+            "isPartOf": {
+              "@id": "https://desenvolvimento23.github.io/institucional/#website"
+            },
+            "about": {
+              "@id": "https://desenvolvimento23.github.io/institucional/#organization"
+            },
+            "inLanguage": "pt-BR"
           },
           {
-            "@type": "Organization",
-            "name": "Forte Demolidora",
-            "url": "https://www.demolidoraforte.com.br/"
-          },
-          {
-            "@type": "Organization",
-            "name": "Forte Restauradora",
-            "url": "https://forterestauradora.com.br/"
-          },
-          {
-            "@type": "Organization",
-            "name": "Campagnaro e Ciotta Implementos",
-            "url": "https://www.instagram.com/cecimplementos/"
+            "@type": "BreadcrumbList",
+            "@id": "https://desenvolvimento23.github.io/institucional/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Início",
+                "item": "https://desenvolvimento23.github.io/institucional/"
+              }
+            ]
           }
         ]
       }

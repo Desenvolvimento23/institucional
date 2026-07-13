@@ -1,7 +1,7 @@
 {
   "name": "Grupo Campagnaro",
   "short_name": "Campagnaro",
-  "description": "Soluções completas para caminhões e carretas desde 1998.",
+  "description": "Peças, acessórios, manutenção, implementos, restauração e soluções para caminhões e carretas desde 1998.",
   "lang": "pt-BR",
   "start_url": "/institucional/",
   "scope": "/institucional/",
@@ -12,7 +12,8 @@
     {
       "src": "favicon.png",
       "sizes": "566x566",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
