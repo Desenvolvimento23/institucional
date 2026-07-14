@@ -3,7 +3,7 @@ import { ArrowDown, ArrowRight, MapPin } from "lucide-react";
 
 export default function Hero() {
   const heroImageStyle = {
-    "--hero-image": `url("${import.meta.env.BASE_URL}hero/desk.png")`,
+    "--hero-image": `url("${import.meta.env.BASE_URL}hero/desk.jpg")`,
   } as CSSProperties;
 
   return (

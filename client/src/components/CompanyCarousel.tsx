@@ -13,6 +13,7 @@ export default function CompanyCarousel({
 }: CompanyCarouselProps) {
   const [activeImage, setActiveImage] = useState(0);
   const hasControls = images.length > 1;
+  const activeImageSrc = images[activeImage];
 
   const showPreviousImage = () => {
     setActiveImage(current => (current - 1 + images.length) % images.length);
@@ -37,17 +38,16 @@ export default function CompanyCarousel({
       className="company-carousel"
       aria-label={`Trabalhos realizados pela ${companyName}`}
     >
-      {images.map((image, index) => (
+      {activeImageSrc ? (
         <img
-          className={index === activeImage ? "is-active" : ""}
-          src={`${import.meta.env.BASE_URL}${image}`}
-          alt={`Trabalho realizado pela ${companyName}, foto ${index + 1}`}
-          aria-hidden={index !== activeImage}
+          className="is-active"
+          src={`${import.meta.env.BASE_URL}${activeImageSrc}`}
+          alt={`Trabalho realizado pela ${companyName}, foto ${activeImage + 1}`}
           loading="lazy"
           decoding="async"
-          key={image}
+          key={activeImageSrc}
         />
-      ))}
+      ) : null}
       {hasControls && (
         <>
           <button

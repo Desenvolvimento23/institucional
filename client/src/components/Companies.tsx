@@ -48,10 +48,10 @@ const companies = [
     href: "https://www.campagnarocaminhoes.com.br/",
     instagram: "https://www.instagram.com/campagnarocaminhoes",
     images: [
-      "companies/caminhoes-carretas-gallery/01-fachada-aerea.png",
+      "companies/caminhoes-carretas-gallery/01-fachada-aerea.jpg",
       "companies/caminhoes-carretas-gallery/02-fachada.jpg",
-      "companies/caminhoes-carretas-gallery/03-estrutura.png",
-      "companies/caminhoes-carretas-gallery/04-entrada.png",
+      "companies/caminhoes-carretas-gallery/03-estrutura.jpg",
+      "companies/caminhoes-carretas-gallery/04-entrada.jpg",
       "companies/caminhoes-carretas-gallery/05-caminhoes.jpg",
       "companies/caminhoes-carretas-gallery/06-caminhao.jpg",
     ],
