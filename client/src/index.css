@@ -29,7 +29,7 @@ body {
   min-width: 320px;
   background: var(--white);
   color: var(--ink);
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif, system-ui, -apple-system;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -86,16 +86,16 @@ img {
 
 .header-inner {
   display: flex;
-  min-height: 68px;
+  min-height: 58px;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
 }
 
 .brand-logo {
   position: relative;
   display: flex;
-  width: 210px;
-  height: 52px;
+  width: 180px;
+  height: 44px;
   flex: 0 0 auto;
   align-items: center;
   overflow: hidden;
@@ -114,7 +114,7 @@ img {
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 22px;
   margin-left: auto;
 }
 
@@ -205,8 +205,8 @@ img {
 }
 
 .header-cta {
-  min-height: 40px;
-  padding-inline: 17px;
+  min-height: 36px;
+  padding-inline: 15px;
   font-size: 0.82rem;
 }
 
@@ -261,7 +261,7 @@ img {
   background-image: var(--hero-image);
   background-position: center;
   background-size: cover;
-  opacity: 0.55;
+  opacity: 0.68;
 }
 
 .hero-overlay {
@@ -269,10 +269,10 @@ img {
     linear-gradient(
       90deg,
       rgba(9, 9, 9, 0.98) 0%,
-      rgba(9, 9, 9, 0.86) 47%,
-      rgba(9, 9, 9, 0.26) 100%
+      rgba(9, 9, 9, 0.76) 47%,
+      rgba(9, 9, 9, 0.12) 100%
     ),
-    linear-gradient(0deg, rgba(9, 9, 9, 0.72) 0%, transparent 42%);
+    linear-gradient(0deg, rgba(9, 9, 9, 0.56) 0%, transparent 42%);
 }
 
 .hero-content {
@@ -735,7 +735,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 999px;
   color: var(--white);
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 750;
   letter-spacing: 0.01em;
   transition:
@@ -947,7 +947,7 @@ img {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 650;
 }
 
@@ -970,7 +970,8 @@ img {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.7fr 0.8fr 0.8fr;
+  align-items: center;
+  grid-template-columns: 1.7fr 0.8fr;
   gap: 48px;
   padding: 22px 0 64px;
 }
@@ -984,8 +985,8 @@ img {
 .footer-brand {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .footer-grid h3 {
@@ -1000,8 +1001,9 @@ img {
 .footer-grid > div:not(.footer-brand) {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 11px;
+  align-items: flex-end;
+  gap: 14px;
+  text-align: right;
 }
 
 .footer-grid a,
@@ -1010,7 +1012,7 @@ img {
   align-items: center;
   gap: 8px;
   color: rgba(9, 9, 9, 0.58);
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   transition: color 160ms ease;
 }
 
@@ -1130,7 +1132,7 @@ img {
   }
 
   .desktop-nav a {
-    font-size: 0.82rem;
+    font-size: 0.95rem;
   }
 
   .header-cta {
@@ -1181,6 +1183,16 @@ img {
 }
 
 @media (max-width: 680px) {
+  .footer-brand {
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .footer-grid > div:not(.footer-brand) {
+    align-items: center;
+    text-align: center;
+  }
   .site-container {
     width: min(100% - 32px, 1180px);
   }
@@ -1224,13 +1236,13 @@ img {
   }
 
   .header-inner {
-    min-height: 68px;
-    gap: 10px;
+    min-height: 56px;
+    gap: 8px;
   }
 
   .brand-logo {
-    width: 150px;
-    height: 46px;
+    width: 136px;
+    height: 40px;
   }
 
   .desktop-nav a {
@@ -1238,9 +1250,9 @@ img {
   }
 
   .header-cta {
-    min-height: 34px;
-    padding-inline: 12px;
-    font-size: 0.72rem;
+    min-height: 32px;
+    padding-inline: 10px;
+    font-size: 0.7rem;
   }
 
   .footer-logo {
@@ -1255,12 +1267,12 @@ img {
   }
 
   .hero-media {
-    background-position: 62% center;
-    opacity: 0.38;
+    background-position: 82% center;
+    opacity: 0.5;
   }
 
   .hero-overlay {
-    background: linear-gradient(90deg, rgba(9, 9, 9, 0.98), rgba(9, 9, 9, 0.7));
+    background: linear-gradient(90deg, rgba(9, 9, 9, 0.96), rgba(9, 9, 9, 0.54));
   }
 
   .hero-content {
@@ -1445,8 +1457,8 @@ img {
   }
 
   .brand-logo {
-    width: 126px;
-    height: 42px;
+    width: 122px;
+    height: 38px;
   }
 
   .desktop-nav {
